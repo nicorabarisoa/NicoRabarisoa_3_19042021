@@ -95,6 +95,27 @@ button {
 .fonction {
   margin-bottom: 45px;
 }
+.fonction__step {
+  margin: 5% 5% 0% 10%;
+  list-style: none;
+}
+.fonction li {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  padding: 8% 0% 8% 0%;
+  margin-bottom: 10px;
+}
+.fonction li div {
+  color: white;
+  background-color: #9356DC;
+  border-radius: 100%;
+  font-size: 15px;
+  padding: 5px 13px 5px 13px;
+  position: absolute;
+  left: 5%;
+}
 
 /* @import "./layout/container";
 @import "./layout/form";

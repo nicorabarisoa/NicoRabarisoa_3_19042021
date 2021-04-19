@@ -1,3 +1,26 @@
 .fonction{
     margin-bottom: 45px;
+    &__step{
+        margin: 5% 5% 0% 10%;
+        list-style:none;
+       
+    }
+    & li {
+        display: flex;
+        align-items: center;
+        background-color: $coulour-bglight;
+        border-radius: 20px;
+        padding: 8% 0% 8% 0%;
+        margin-bottom: 10px;
+
+        & div{
+            color: white;
+            background-color:$colour-primary;
+            border-radius: 100%;
+            font-size: 15px;
+            padding: 5px 13px 5px 13px;
+            position: absolute;
+            left: 5%;
+        }
+    }
 }
