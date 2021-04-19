@@ -1,0 +1,106 @@
+/* @import "./utils/functions";
+*/
+/*@import "./utils/extensions"; */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: 900;
+  font-size: 5rem;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1;
+  margin: 0% 5%;
+}
+
+p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  color: black;
+  font-style: italic;
+  font-size: 1.7rem;
+}
+
+.btn {
+  border-radius: 50px;
+  border: none;
+  padding: 3% 5% 3% 5%;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  color: white;
+  background: linear-gradient(90deg, #ff79da 0%, #9356dc 100%);
+}
+
+.header {
+  padding: 4% 0% 5px 0%;
+}
+.header__logo {
+  text-align: center;
+}
+
+.nav {
+  text-align: center;
+}
+.nav__local {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #353535;
+  padding: 2% 0%;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 5px 5px -7px black;
+}
+.nav__local > i {
+  margin-right: 15px;
+}
+.nav__reserv {
+  background-color: #f6f6f6;
+  padding: 8% 4% 10% 4%;
+  margin-bottom: 40px;
+}
+.nav__reserv * {
+  margin-bottom: 5%;
+}
+
+.fonction {
+  margin-bottom: 45px;
+}
+
+/* @import "./layout/container";
+@import "./layout/form";
+
+
+
+@import "./pages/menu";*/
+
+/*# sourceMappingURL=style.css.map */

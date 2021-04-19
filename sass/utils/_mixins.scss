@@ -1,0 +1,10 @@
+@mixin btn {
+    border-radius: 50px;
+    border:none;
+    padding: 3% 5% 3% 5%;
+    font-size: 18px;
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    background: linear-gradient(90deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+}
