@@ -1,0 +1,19 @@
+{
+  "name": "nicorabarisoa_3_19042021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicorabarisoa/NicoRabarisoa_3_19042021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicorabarisoa/NicoRabarisoa_3_19042021/issues"
+  },
+  "homepage": "https://github.com/nicorabarisoa/NicoRabarisoa_3_19042021#readme"
+}
