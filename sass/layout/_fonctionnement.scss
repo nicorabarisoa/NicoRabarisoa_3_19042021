@@ -1,3 +1,6 @@
+/* 3 étapes de fonctionements */
+
+
 .fonction{
     margin-bottom: 45px;
     &__step{
@@ -11,8 +14,10 @@
         background-color: $coulour-bglight;
         border-radius: 20px;
         padding: 8% 0% 8% 0%;
-        margin-bottom: 10px;
-
+        margin-bottom: 15px;
+        position: relative;
+        box-shadow: $shadow;
+        
         & div{
             color: white;
             background-color:$colour-primary;
@@ -20,7 +25,13 @@
             font-size: 15px;
             padding: 5px 13px 5px 13px;
             position: absolute;
-            left: 5%;
+            left: -5%;
         }
+        &>i{
+            margin-left: 
+            8%;
+            margin-right: 7%;
+            font-size: 18px;
+         }
     }
 }
