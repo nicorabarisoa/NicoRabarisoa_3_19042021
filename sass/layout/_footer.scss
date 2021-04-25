@@ -1,0 +1,30 @@
+.footer{
+    
+    padding: $margin;
+    background-color: $colour-footerbg;
+    color: white;
+    & >h2{
+        font-size: 0.7em;
+        margin-bottom: 5%;
+        font-family: 'Shrikhand', sans-serif;
+        padding-top: 5%;
+    }
+    &>a{
+        display: flex;
+        margin-bottom: 2%;
+        align-items: center;
+        color: white;
+        & div{
+            font-size: 13px;
+            margin-right: 3%;
+           
+        }
+       
+    }
+   
+}
+
+
+
+
+

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* @import "./utils/functions";
 */
 /*@import "./utils/extensions"; */
@@ -26,7 +27,12 @@ h2 {
   font-weight: 600;
   font-size: 1.6rem;
   line-height: 1;
-  margin: 0% 5%;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.5;
 }
 
 p {
@@ -47,6 +53,11 @@ button {
   color: black;
   font-style: italic;
   font-size: 1.7rem;
+}
+
+a {
+  color: black;
+  text-decoration: none;
 }
 
 .btn {
@@ -92,24 +103,32 @@ button {
   margin-bottom: 5%;
 }
 
+/* 3 étapes de fonctionements */
 .fonction {
-  margin-bottom: 45px;
+  margin: 0% 5% 45px 5%;
 }
 .fonction__step {
-  margin: 5% 5% 0% 10%;
+  margin: 5% 0% 0% 5%;
   list-style: none;
 }
-.fonction li {
+
+.list__order {
   display: flex;
   align-items: center;
   background-color: #f6f6f6;
   border-radius: 20px;
-  padding: 8% 0% 8% 0%;
+  padding: 8% 5% 8% 0%;
   margin-bottom: 15px;
   position: relative;
   box-shadow: 0px 2px 10px -4px rgba(0, 0, 0, 0.7);
 }
-.fonction li div {
+.list__order--active {
+  background-color: #f5edff;
+}
+.list__order--active > i {
+  color: #9356DC;
+}
+.list__order div {
   color: white;
   background-color: #9356DC;
   border-radius: 100%;
@@ -118,10 +137,81 @@ button {
   position: absolute;
   left: -5%;
 }
-.fonction li > i {
+.list__order > i {
   margin-left: 8%;
   margin-right: 7%;
   font-size: 18px;
+}
+
+.listresto {
+  padding: 0% 5% 45px 5%;
+  background-color: #f6f6f6;
+}
+.listresto__title {
+  padding-top: 12%;
+  padding-bottom: 5%;
+}
+.listresto__carte {
+  margin-bottom: 2%;
+}
+
+.carte {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: 0px 2px 10px -4px rgba(0, 0, 0, 0.7);
+  margin-bottom: 5%;
+}
+.carte__image {
+  width: 100%;
+  overflow: hidden;
+  height: 200px;
+}
+.carte__image > img {
+  width: 100%;
+}
+.carte__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 4% 10% 4% 5%;
+}
+.carte__trend {
+  font-size: 0.6em;
+  border-radius: 2px;
+  position: absolute;
+  background-color: #99e2d0;
+  color: #008766;
+  width: fit-content;
+  padding: 1% 2%;
+  top: 4%;
+  right: 3%;
+}
+.carte__trend--inactive {
+  display: none;
+}
+
+.footer {
+  padding: 0% 5% 45px 5%;
+  background-color: #353535;
+  color: white;
+}
+.footer > h2 {
+  font-size: 0.7em;
+  margin-bottom: 5%;
+  font-family: "Shrikhand", sans-serif;
+  padding-top: 5%;
+}
+.footer > a {
+  display: flex;
+  margin-bottom: 2%;
+  align-items: center;
+  color: white;
+}
+.footer > a div {
+  font-size: 13px;
+  margin-right: 3%;
 }
 
 /* @import "./layout/container";
