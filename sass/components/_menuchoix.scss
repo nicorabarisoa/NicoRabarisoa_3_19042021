@@ -1,0 +1,33 @@
+.menuchoix{
+    background-color: white;
+    border-radius: $radius;
+    display: flex;
+    overflow: hidden;
+    box-shadow: $shadow;
+    margin-bottom: 4%;
+    
+    
+    &__info{
+        flex-grow: 1;
+        padding: $paddincard;
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+    }
+    &__check{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        color: white;
+        width: 15%;
+        background-color: $colour-tertiary;
+        flex-grow: 1;
+        &>i{
+            font-size: 30px;
+            
+            
+        }
+        
+    }
+    
+}

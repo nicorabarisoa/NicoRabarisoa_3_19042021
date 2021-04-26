@@ -1,0 +1,12 @@
+.menubg{
+    height: 280px;
+    position:absolute;
+    z-index: 0;
+    &__img{
+        @include bgmen
+    }
+}
+
+.noteench{
+    object-position: 0 -100px;
+}
