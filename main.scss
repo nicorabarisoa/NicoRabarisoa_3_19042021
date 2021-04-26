@@ -1,0 +1,28 @@
+@import "./utils/variables";
+/* @import "./utils/functions";
+*/@import "./utils/mixins";
+/*@import "./utils/extensions"; */
+
+@import "./base/base";
+ @import "./base/typography";
+
+
+ @import "./components/buttons";
+ @import "./components/menubg";
+ @import "./components/menuchoix";
+ @import "./components/info";
+
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/fonctionnement";
+@import "./layout/list";
+@import "./layout/listresto";
+@import "./layout/carte";
+@import "./layout/footer";
+@import "./layout/menu";
+/* @import "./layout/container";
+@import "./layout/form";
+
+
+
+@import "./pages/menu";*/
