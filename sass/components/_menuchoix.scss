@@ -1,27 +1,47 @@
 .menuchoix{
     background-color: white;
     border-radius: $radius;
-    display: flex;
     overflow: hidden;
     box-shadow: $shadow;
-    margin-bottom: 4%;
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+    height: 80px;
     
-    
+  
     &__info{
-        flex-grow: 1;
+        position: relative;
         padding: $paddincard;
         display: flex;
         justify-content: space-between;
-        width: 85%;
+        width: 100%;
+        
     }
+    &__info:hover + div{
+       
+            animation: slide 1.5s forwards;& i {
+                animation: rotation 1s forwards ;
+            }                 
+        
+    }
+    &__info + div{
+       
+        animation: slideout 2s forwards;
+        & i {
+            animation: rotation2 1s forwards ;
+        }                 
+             
+    
+}
     &__check{
+        position: relative;
        display: flex;
        justify-content: center;
        align-items: center;
         color: white;
-        width: 15%;
+        width: 0%;
         background-color: $colour-tertiary;
-        flex-grow: 1;
+        
         &>i{
             font-size: 30px;
             
@@ -31,3 +51,40 @@
     }
     
 }
+
+/*#container:hover > #cube { background-color: yellow; } 
+*/
+@keyframes slide {
+    0%{ width: 0%;}
+        
+    100%{
+        width: 20%;
+        
+    }
+    
+}
+
+@keyframes slideout {
+    0%{ width: 20%;}
+    100%{
+        width: 0%;
+    }
+    
+}
+
+@keyframes rotation {
+    0%{ transform: rotate(0.1turn);}
+    100%{
+        transform: rotate(1turn);
+    }
+    
+}
+
+@keyframes rotation2 {
+    0%{ transform: rotate(1turn);}
+    100%{
+        transform: rotate(0turn);
+    }
+    
+}
+
