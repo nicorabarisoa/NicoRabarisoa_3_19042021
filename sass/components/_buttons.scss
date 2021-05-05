@@ -1,4 +1,14 @@
 .btn {
     @include btn
-}
 
+   
+}
+.btn:hover{
+    animation:light 500ms ease-out forwards;
+        
+}
+@keyframes light {
+    0% {background: linear-gradient(45deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);}
+    100%{background: linear-gradient(45deg, hsl(317,100%,80%), hsl(267,66%,65%) 100%);}
+    
+}
