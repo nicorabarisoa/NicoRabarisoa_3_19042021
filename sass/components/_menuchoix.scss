@@ -7,7 +7,29 @@
     width: 100%;
     margin-bottom: 30px;
     height: 80px;
-    
+    opacity: 0%;
+    &--1{
+        
+        animation: spawn1 1s forwards;
+       
+    }
+
+    &--2{
+        
+        animation: spawn1 1s forwards;
+        animation-delay: 0.5s;
+    }
+
+    &--3{
+        
+        animation: spawn1 1s forwards;
+        animation-delay: 1s;
+    }
+    &--4{
+        
+        animation: spawn1 1s forwards;
+        animation-delay: 1.5s;
+    }
   
     &__info{
         position: relative;
@@ -52,8 +74,18 @@
     
 }
 
-/*#container:hover > #cube { background-color: yellow; } 
-*/
+/*animation */
+@keyframes spawn1 {
+    0%{ opacity: 0;
+        transform: translateY(30px);}
+    100%{
+        opacity: 1; transform: translateY(0px);
+    }
+    
+}
+
+
+
 @keyframes slide {
     0%{ width: 0%;}
         
@@ -87,4 +119,6 @@
     }
     
 }
+
+
 
