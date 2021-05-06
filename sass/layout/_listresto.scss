@@ -1,6 +1,9 @@
 .listresto{
     padding: $margin;
     background-color: $colour-bglight;
+    @media (min-width:1440px) {
+        padding: 0% 20% 45px 20%;
+    }
     &__title{
         padding-top: 50px;
         padding-bottom: 30px;

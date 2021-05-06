@@ -36,9 +36,12 @@
         padding: $paddincard;
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 100%; 
+       
+       
         
     }
+
     &__info:hover + div{
        
             animation: slide 1.5s forwards;& i {
@@ -56,12 +59,12 @@
     
 }
     &__check{
-        position: relative;
+        
        display: flex;
        justify-content: center;
        align-items: center;
         color: white;
-        width: 0%;
+        width:0%;
         background-color: $colour-tertiary;
         
         &>i{
@@ -73,6 +76,8 @@
     }
     
 }
+
+
 
 /*animation */
 @keyframes spawn1 {

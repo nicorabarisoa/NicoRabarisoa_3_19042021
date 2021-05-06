@@ -3,7 +3,9 @@
 
 .fonction{
     margin:$margin;
-    
+    @media (min-width:1440px) {
+        margin: 0% 20% 45px 20%;
+    }
     &__step{
         margin: 5% 0% 0% 20px;
         list-style:none;

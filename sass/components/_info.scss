@@ -1,21 +1,39 @@
 .info{
+   
     &__heading{
+       
+        margin-right: 10px;
+        white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; 
+       
+          
         font-size: 22px;
+        & > h5{
+            overflow: hidden;
+            text-overflow: ellipsis; 
+        }
         & > p{
+            
+            overflow: hidden;
+            text-overflow: ellipsis; 
             font-size: 15px;
+            width: 100%;
         }
        
     }
     &__price{
-      
+        white-space: nowrap;
+       display: flex;
+       align-items: flex-end;
 
-        position: relative;
+      
         width: 35px;
         &>p{
+           
             font-size: 18px;
             font-weight: 700;
-            position: absolute;
-            bottom: 0;
+            
 
             
         }

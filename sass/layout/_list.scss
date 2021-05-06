@@ -7,7 +7,9 @@
     margin-bottom: 15px;
     position: relative;
     box-shadow: $shadow;
-
+& > i {
+    color: rgb(123, 123, 124);
+}
 &--active {
   
     background-color: $colour-active;
