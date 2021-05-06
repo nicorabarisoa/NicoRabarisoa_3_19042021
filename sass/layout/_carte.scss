@@ -4,7 +4,7 @@
     overflow: hidden;
     background-color: white;
     box-shadow: $shadow;
-    margin-bottom: 5%;
+    margin-bottom: 25px;
     &__image{
         width: 100%;
         overflow: hidden;
@@ -37,4 +37,14 @@
         
        
      }
+}
+
+.fa-heart:hover{
+    animation: filler 1s forwards;
+}
+
+@keyframes filler {
+    100%{color: black; }
+    100%{color: red; font-weight: 800;}
+    
 }

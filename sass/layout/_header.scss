@@ -1,13 +1,13 @@
 .header {
-    position: relative;
-   padding: 4% 0%  5px 0%;
+   position: relative;
+   padding: 20px 0%  5px 0%;
    &__logo{
        text-align: center;
    }
    &__arrow{
         position:absolute;
-        top:35%;
-        left: 4%;
+        top:25px;
+        left: 5%;
    }
     
 }
