@@ -5,6 +5,10 @@
     position: relative;
     margin-top: 230px;
     z-index: 0;
+    @media (min-width:1440px) {
+        padding-left:  20% ;
+        padding-right:  20% ;
+    }
    
     &__heading{
         display: flex;

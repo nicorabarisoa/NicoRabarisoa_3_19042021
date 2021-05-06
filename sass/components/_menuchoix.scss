@@ -1,129 +1,111 @@
-.menuchoix{
-    background-color: white;
-    border-radius: $radius;
-    overflow: hidden;
-    box-shadow: $shadow;
+.menuchoix {
+  background-color: white;
+  border-radius: $radius;
+  overflow: hidden;
+  box-shadow: $shadow;
+  display: flex;
+  width: 100%;
+  margin-bottom: 30px;
+  height: 80px;
+  opacity: 0%;
+  &--1 {
+    animation: spawn1 1s forwards;
+  }
+
+  &--2 {
+    animation: spawn1 1s forwards;
+    animation-delay: 0.5s;
+  }
+
+  &--3 {
+    animation: spawn1 1s forwards;
+    animation-delay: 1s;
+  }
+  &--4 {
+    animation: spawn1 1s forwards;
+    animation-delay: 1.5s;
+  }
+
+  &__info {
+    position: relative;
+    padding: $paddincard;
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    margin-bottom: 30px;
-    height: 80px;
-    opacity: 0%;
-    &--1{
-        
-        animation: spawn1 1s forwards;
-       
-    }
+  }
 
-    &--2{
-        
-        animation: spawn1 1s forwards;
-        animation-delay: 0.5s;
+  &__info:hover + div {
+    animation: slide 1.5s forwards;
+    & i {
+      animation: rotation 1s forwards;
     }
+  }
+  &__info + div {
+    animation: slideout 2s forwards;
+    & i {
+      animation: rotation2 1s forwards;
+    }
+  }
+  &__check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 0%;
+    background-color: $colour-tertiary;
 
-    &--3{
-        
-        animation: spawn1 1s forwards;
-        animation-delay: 1s;
-    }
-    &--4{
-        
-        animation: spawn1 1s forwards;
-        animation-delay: 1.5s;
-    }
-  
-    &__info{
-        position: relative;
-        padding: $paddincard;
-        display: flex;
-        justify-content: space-between;
-        width: 100%; 
-       
-       
-        
-    }
-
-    &__info:hover + div{
-       
-            animation: slide 1.5s forwards;& i {
-                animation: rotation 1s forwards ;
-            }                 
-        
-    }
-    &__info + div{
-       
-        animation: slideout 2s forwards;
-        & i {
-            animation: rotation2 1s forwards ;
-        }                 
-             
-    
-}
-    &__check{
-        
-       display: flex;
-       justify-content: center;
-       align-items: center;
-        color: white;
-        width:0%;
-        background-color: $colour-tertiary;
-        
-        &>i{
-            font-size: 30px;
-            
-            
-        }
-        
+    & > i {
+      font-size: 30px;
     }
     
+  }
 }
-
-
 
 /*animation */
 @keyframes spawn1 {
-    0%{ opacity: 0;
-        transform: translateY(30px);}
-    100%{
-        opacity: 1; transform: translateY(0px);
-    }
-    
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
-
-
 @keyframes slide {
-    0%{ width: 0%;}
-        
-    100%{
-        width: 20%;
-        
-    }
-    
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 20%;
+  }
 }
 
 @keyframes slideout {
-    0%{ width: 20%;}
-    100%{
-        width: 0%;
-    }
-    
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 0%;
+  }
 }
 
 @keyframes rotation {
-    0%{ transform: rotate(0.1turn);}
-    100%{
-        transform: rotate(1turn);
-    }
-    
+  0% {
+    transform: rotate(0.1turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
 }
 
 @keyframes rotation2 {
-    0%{ transform: rotate(1turn);}
-    100%{
-        transform: rotate(0turn);
-    }
-    
+  0% {
+    transform: rotate(1turn);
+  }
+  100% {
+    transform: rotate(0turn);
+  }
 }
-
-
-
