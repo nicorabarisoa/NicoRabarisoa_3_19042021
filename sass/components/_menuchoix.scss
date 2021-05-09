@@ -42,12 +42,12 @@
       animation: rotation 1s forwards;
     }
   }
-  &__info:hover:after + div {
+  /*&__info:hover:after + div {
     animation: slideout 1s ease-out forwards;
     & i {
       animation: rotation2 1s forwards;
     }
-  } 
+  } */
   &__check {
     transition: width 1.5s;
     display: flex;
