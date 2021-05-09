@@ -28,13 +28,16 @@
   }
 
   &__info {
+    transition: width 1.5s;
     position: relative;
     padding: $paddincard;
     display: flex;
     justify-content: space-between;
     width: 100%;
   }
-    
+  &__info:hover{
+    width: 80%;
+  }
    &__info:hover + div {
     width:20%;
     /*animation: slide 1s  ease-in forwards;*/
