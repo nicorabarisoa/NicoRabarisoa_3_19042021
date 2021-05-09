@@ -38,16 +38,26 @@
        
      }
 }
-
-.fa-heart:hover{
-    animation: filler 1s forwards;
+.heart{
+    width: 25px;
+    overflow: visible;
 }
-.fa-heart:active{
-    animation: filler 1s forwards;
+.heartsvg{
+    fill: white;
+    stroke: black;
+    stroke-width: 30px;
+}
+
+.heartsvg:hover{
+    animation: filler 500ms ease-in forwards;
+}
+.heartsvg:active{
+    animation: filler 500ms ease-in forwards;
 }
 
 @keyframes filler {
-    100%{color: black; }
-    100%{color: $colour-primary; font-weight: 800;}
+     0%{ fill:white;stroke: black; }
+    100%{stroke: $colour-primary; fill:$colour-primary; } 
     
 }
+

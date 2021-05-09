@@ -8,8 +8,9 @@
   margin-bottom: 30px;
   height: 80px;
   opacity: 0%;
+  cursor: pointer;
   &--1 {
-    animation: spawn1 1s forwards;
+    animation: spawn1 1s  forwards;
   }
 
   &--2 {
@@ -33,20 +34,22 @@
     justify-content: space-between;
     width: 100%;
   }
-
-  &__info:hover + div {
-    animation: slide 1.5s forwards;
+    
+   &__info:hover + div {
+    width:20%;
+    /*animation: slide 1s  ease-in forwards;*/
     & i {
       animation: rotation 1s forwards;
     }
   }
-  &__info + div {
-    animation: slideout 2s forwards;
+  &__info:hover:after + div {
+    animation: slideout 1s ease-out forwards;
     & i {
       animation: rotation2 1s forwards;
     }
-  }
+  } 
   &__check {
+    transition: width 1.5s;
     display: flex;
     justify-content: center;
     align-items: center;
