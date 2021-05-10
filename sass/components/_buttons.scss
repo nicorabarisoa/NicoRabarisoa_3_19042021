@@ -5,6 +5,7 @@
 }
 .btn:hover{
     animation:light 500ms ease-out forwards;
+    cursor: pointer;
         
 }
 @keyframes light {

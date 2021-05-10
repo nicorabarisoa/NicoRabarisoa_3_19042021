@@ -1,17 +1,95 @@
-.listresto{
-    padding: $margin;
-    background-color: $colour-bglight;
-    @media (min-width:1440px) {
-        padding: 0% 20% 45px 20%;
-    }
-    &__title{
-        padding-top: 50px;
-        padding-bottom: 30px;
-    }
-
-   
-   
- /*  */   
+.listresto {
+  padding: $margin;
+  background-color: $colour-bglight;
+  overflow: hidden;
+  height: 130px;
+  animation: grow 1s ease-in 2s forwards;
+  @media (min-width: 1440px) {
+    padding: 0% 20% 45px 20%;
+  }
+  &__carte{
+      opacity: 0%;
+  }
+  &__title {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  &__spinner {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-bottom: 20px;
+    animation: end 3s ease-in 0s forwards;
     
-   
+
+    .three-quarter-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid $colour-tertiary;
+      border-top: 3px solid transparent;
+      border-radius: 50%;
+      animation: spin 0.8s linear 0s infinite;
+    }
+  }
+
+  /* KEYFRAMES */
+
+  &__carte--1{
+      animation: spawning 1s ease-in 3s forwards;
+  }
+  &__carte--2{
+    animation: spawning 1s ease-in 3.5s forwards;
 }
+&__carte--3{
+    animation: spawning 1s ease-in  4s forwards;
+}
+&__carte--4{
+    animation: spawning 1s ease-in 4.5s forwards;
+}
+}
+@keyframes spin {
+    from {
+      transform: rotate(0);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  @keyframes end {
+    0% {
+      opacity: 1;
+      height: 60px;
+    }
+    50% {
+        height: 60px;
+      opacity: 0;
+    }
+    100%{opacity: 0;
+        height: 0px;}
+  }
+
+  @keyframes spawning {
+    0% {
+      opacity: 0;
+      
+    }
+    
+    100%{ opacity: 1;}
+  }
+
+  @keyframes grow {
+    0% {
+      height: 130px;
+      
+    }
+    
+    100%{ height: 1380px;}
+  }
+
+
+
+  
