@@ -15,6 +15,10 @@
   }
   &:hover > .menuchoix__check{
     width: 20%;
+    & i {
+      animation: rotation 1s forwards;
+      transform: rotate(1turn);
+    }
  
    }
   &--1 {
@@ -56,6 +60,7 @@
 
     & > i {
       font-size: 30px;
+      transition: transform 1s;
     }
     
   }
@@ -73,39 +78,4 @@
   }
 }
 
-@keyframes slide {
-  0% {
-    width: 0%;
-  }
 
-  100% {
-    width: 20%;
-  }
-}
-
-@keyframes slideout {
-  0% {
-    width: 20%;
-  }
-  100% {
-    width: 0%;
-  }
-}
-
-@keyframes rotation {
-  0% {
-    transform: rotate(0.1turn);
-  }
-  100% {
-    transform: rotate(1turn);
-  }
-}
-
-@keyframes rotation2 {
-  0% {
-    transform: rotate(1turn);
-  }
-  100% {
-    transform: rotate(0turn);
-  }
-}
